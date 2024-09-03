@@ -1,19 +1,14 @@
 import React from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  Text,
-} from 'react-native';
+import {SafeAreaView, StyleSheet} from 'react-native';
 
-import { Colors } from 'react-native/Libraries/NewAppScreen';
+import {Colors} from 'react-native/Libraries/NewAppScreen';
+import {Header, Slider} from './src/components';
 
 function App(): React.JSX.Element {
-
   return (
     <SafeAreaView style={styles.container}>
-      <Text style={styles.sectionTitle}>
-        Home
-      </Text>
+      <Header />
+      <Slider data={['1', '2', '3', '4']} />
     </SafeAreaView>
   );
 }
